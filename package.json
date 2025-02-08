@@ -1,0 +1,21 @@
+{
+  "name": "shopping-list",
+  "version": "1.0.0",
+  "description": "A simple shopping list application with budget tracking and product categorization.",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "keywords": [
+    "shopping",
+    "list",
+    "budget",
+    "categories"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

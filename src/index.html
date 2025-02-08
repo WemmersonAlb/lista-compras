@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Compras</h1>
+        <div class="budget-section">
+            <input type="number" id="budget-input" placeholder="Valor do orçamento">
+            <button id="budget-button">Fixar Orçamento</button>
+            <button id="edit-budget-button" class="hidden">Editar Orçamento</button>
+            <button id="clear-button">Limpar Tudo</button>
+        </div>
+        <div id="budget-display" class="hidden">Orçamento: R$ <span id="budget-amount">0,00</span></div>
+        <div id="total-display">Total: <span id="total-amount">R$ 0,00</span></div>
+        
+        <div class="product-inputs">
+            <input type="text" id="product-name-input" placeholder="Nome do Produto">
+            <input type="number" id="product-quantity-input" placeholder="Quantidade">
+            <input type="number" id="product-price-input" placeholder="Preço por Unidade (opcional)">
+            <select id="product-category-select">
+                <option value="limpeza">Limpeza</option>
+                <option value="higiene">Higiene Pessoal</option>
+                <option value="frios">Frios</option>
+                <option value="cereais">Cereais</option>
+                <option value="ortifrut">Ortofrut</option>
+                <option value="carnes">Carnes</option>
+                <option value="laticínios">Laticínios</option>
+                <option value="outros">Outros</option>
+            </select>
+            <button id="add-product-button">Adicionar Produto</button>
+        </div>
+
+        <table id="shopping-list-table">
+            <thead>
+                <tr>
+                    <th>Qtd</th>
+                    <th>Nome do Produto</th>
+                    <th>Preço por Unidade</th>
+                    <th>Total</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="product-table-body"></tbody>
+        </table>
+    </div>
+
+    <!-- Modal -->
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Editar Produto</h2>
+            <input type="text" id="edit-product-name" placeholder="Nome do Produto">
+            <input type="number" id="edit-product-quantity" placeholder="Quantidade">
+            <input type="number" id="edit-product-price" placeholder="Preço por Unidade">
+            <select id="edit-product-category">
+                <option value="limpeza">Limpeza</option>
+                <option value="higiene">Higiene Pessoal</option>
+                <option value="frios">Frios</option>
+                <option value="cereais">Cereais</option>
+                <option value="ortifrut">Ortofrut</option>
+                <option value="carnes">Carnes</option>
+                <option value="laticínios">Laticínios</option>
+                <option value="outros">Outros</option>
+            </select>
+            <button id="save-edit-button">Salvar</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

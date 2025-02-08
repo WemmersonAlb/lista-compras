@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.edit-btn, .delete-btn {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.budget-display {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.budget-green {
+    background-color: green;
+    color: white;
+}
+
+.budget-yellow {
+    background-color: orange;
+    color: black;
+}
+
+.budget-red-light {
+    background-color: lightcoral;
+    color: black;
+}
+
+.budget-red-dark {
+    background-color: darkred;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .budget-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.category-limpeza {
+    background-color: blue;
+    color: white;
+}
+
+.category-higiene {
+    background-color: purple;
+    color: white;
+}
+
+.category-frios {
+    background-color: pink;
+    color: black;
+}
+
+.category-cereais {
+    background-color: yellow;
+    color: black;
+}
+
+.category-ortifrut {
+    background-color: green;
+    color: white;
+}
+
+.category-carnes {
+    background-color: red;
+    color: white;
+}
+
+.category-laticinios {
+    background-color: white;
+    color: black;
+}
+.category-outros {
+    background-color: brown;
+    color: white;
+}
